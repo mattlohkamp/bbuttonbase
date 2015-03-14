@@ -1,0 +1,58 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="bbuttonbase.css">
+		<link rel="stylesheet" type="text/css" href="bbuttonbase.exampleSkin.css">
+		<style type="text/css">
+				/*	button positioning fixes	*/
+			button::-moz-focus-inner {padding:0;border:0;} 
+			@media screen and (-webkit-min-device-pixel-ratio:0){button{margin:0px;}}
+			
+			body	{
+			}
+			
+			.footnote	{
+				text-align:center;
+				color:grey;
+				font-size:.85em;
+			}
+			
+			.footnote a	{
+				font-weight:bold;
+				color:inherit
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h1>bbuttonbase demo</h1>
+		
+		<div>
+			<h2>normal</h2>
+			<input type="button" value="this is an input button" />
+			<input type="submit" value="this is an input submit" />
+			<input type="reset" value="this is an input reset" />
+			<input type="image" value="" src="accept.png" />
+			<button type="button"><img src="accept.png" />this is a button</button>
+			<a href=""><img src="accept.png" />this is a link</a>
+		</div>
+		<div>
+			<h2>bbuttonbase</h2>
+			<span class="bbuttonbase"><input type="button" value="this is an input button" /></span>
+			<span class="bbuttonbase"><input type="submit" value="this is an input submit" /></span>
+			<span class="bbuttonbase"><input type="reset" value="this is an input reset" /></span>
+			<span class="bbuttonbase"><input type="image" value="" src="accept.png" /></span>
+			<button type="button" class="bbuttonbase"><span><img src="accept.png" />this is a button</span></button>
+			<a href="" class="bbuttonbase"><img src="accept.png" />this is a link</a>
+		</div>
+		<div>
+			<h2>bbuttonbase, wrapped in an example skin that applies additional styles</h2>
+			<div class="exampleSkin"><span class="bbuttonbase"><input type="button" value="this is an input button" /></span></div>
+			<div class="exampleSkin"><span class="bbuttonbase"><input type="submit" value="this is an input submit" /></span></div>
+			<div class="exampleSkin"><span class="bbuttonbase"><input type="reset" value="this is an input reset" /></span></div>
+			<div class="exampleSkin"><span class="bbuttonbase"><input type="image" value="" src="accept.png" /></span></div>
+			<div class="exampleSkin"><button type="button" class="bbuttonbase"><span><img src="accept.png" />this is a button</span></button></div>
+			<div class="exampleSkin"><a href="" class="bbuttonbase"><img src="accept.png" />this is a link</a></div>
+		</div>
+		<p class="footnote">(<img src="accept.png" /> from <a href="http://www.famfamfam.com/lab/icons/silk/" target="_blank">famfamfam.com silk icons</a>)</p>
+	</body>
+</html>

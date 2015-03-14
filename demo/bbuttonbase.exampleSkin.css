@@ -1,0 +1,47 @@
+	/*	an example bbuttonbase 'skin' that results in consistant rendering of 'stretchable' background graphic (with alpha transparency) across all elements	*/
+
+div.exampleSkin	{
+	background:url('black_btn_bh.png') left 0px;
+	height:32px;
+	display:inline-block;
+	color:white;
+	line-height:28px;
+	margin-right:10px;
+	font-size:.7em;
+	font-weight:bold;
+	font-family:sans-serif;
+}
+
+div.exampleSkin:hover	{	background-position:left -64px;	}
+
+div.exampleSkin .bbuttonbase   {
+	background:url('black_btn_bh.png') right -32px;
+	display:block;
+	margin-left:10px;
+	margin-right:-10px;
+	float:left;
+	padding-left:5px;
+	padding-right:15px;
+}
+
+div.exampleSkin:hover .bbuttonbase	{	background-position:right -96px;	}
+
+div.exampleSkin .bbuttonbase input   {
+	height:25px;
+}
+
+div.exampleSkin .bbuttonbase input[type="image"]	{
+	height:auto;
+	padding-top:7px;
+}
+
+div.exampleSkin .bbuttonbase img	{
+	margin-bottom:-3px;
+	padding-right:1ex;
+	border:0px;
+}
+
+div.exampleSkin button.bbuttonbase span	{
+	display:block;
+	line-height:28px;
+}
