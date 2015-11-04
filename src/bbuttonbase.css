@@ -65,3 +65,10 @@ a.bbuttonbase, .bbuttonbase input, .bbuttonbase span   {
 .bbuttonbase input[type="image"]	{
 	height:auto;
 }
+
+/*	addresses mozilla's secret additional layout setting	*/
+
+button::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
+}

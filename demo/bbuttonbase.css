@@ -1,8 +1,8 @@
 ﻿	/*
-		bbuttonbase	https://github.com/mattlohkamp/bbuttonbase
+		bbuttonbase	http://code.google.com/p/bbuttonbase/
 		author: matt lohkamp | matt@mattlohkmamp.com | http://mattlohkamp.com
-		The MIT License (MIT) - https://opensource.org/licenses/MIT
-		(tl;dr: entirely free to modift and redistribute, as long as this license is preserved)
+		licensed under Apache 2.0 - http://www.apache.org/licenses/LICENSE-2.0.html
+		(tl;dr: modify and redistibute as you like, but give credit where credit is due.)
 	*/
 
     /*
@@ -64,4 +64,11 @@ a.bbuttonbase, .bbuttonbase input, .bbuttonbase span   {
 
 .bbuttonbase input[type="image"]	{
 	height:auto;
+}
+
+/*	addresses mozilla's secret additional layout setting	*/
+
+button::-moz-focus-inner { 
+    border: 0;
+    padding: 0;
 }
