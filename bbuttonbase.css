@@ -1,0 +1,50 @@
+﻿/*
+	author: matt lohkamp | matt@mattlohkmamp.com | http://mattlohkamp.com
+    https://github.com/mattlohkamp/bbuttonbase
+	licensed under Apache 2.0 - http://www.apache.org/licenses/LICENSE-2.0.html
+	(tl;dr: modify and redistibute as you like, but give credit where credit is due.)
+*/
+
+.bbuttonbase    {
+    cursor:pointer;
+    font-family:inherit;
+    text-align:center;
+	font:inherit;
+	line-height:inherit;
+	height:inherit;
+}
+
+button.bbuttonbase  {
+    background:none;
+    border:0px;
+	color:inherit;
+	padding:0px;
+}
+
+a.bbuttonbase   {   text-decoration:inherit;    }
+a.bbuttonbase:hover   { text-decoration:inherit;    }
+
+a.bbuttonbase, .bbuttonbase input, .bbuttonbase span   {
+    padding:0px;
+    margin:0px;
+    font-size:inherit;
+    font-weight:inherit;
+    color:inherit;
+}
+
+.bbuttonbase input, .bbuttonbase span   {
+    background:none;
+    border:0px;
+    cursor:inherit;
+    font:inherit;
+    text-align:inherit;
+	line-height:inherit;
+	display:inline;
+	height:inherit;
+}
+
+.bbuttonbase input[type="image"]	{  height:auto;    }
+
+/*	addresses mozilla's secret additional layout setting	*/
+
+button::-moz-focus-inner {padding:0;border:0;}
